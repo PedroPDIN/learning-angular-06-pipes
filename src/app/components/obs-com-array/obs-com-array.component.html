@@ -1,0 +1,10 @@
+<h2>Subscribe pelo async pipe:</h2>
+
+<ng-container *ngFor="let user of (users$ | async)">
+<!--tem a possibilidade de usar a div no lugar do ng-container, porém, para NÂO renderizar a div (sendo desnecessário no DOM), optamos por usar o ng-container. -->
+  <p><b>Nome: </b>{{ user.name }}</p>
+  <p><b>Nome do usuário: </b>{{ user.username }}</p>
+  <p><b>Email: </b>{{ user.email }}</p>
+  <p><b>Site: </b>{{ user.website }}</p>
+  <hr>
+</ng-container>

@@ -1,0 +1,20 @@
+<h2>Subscribe manual</h2>
+
+<p><b>Nome: </b>{{ user.name }}</p>
+<p><b>Nome do usuário: </b>{{ user.username }}</p>
+<p><b>Email: </b>{{ user.email }}</p>
+<p><b>Site: </b>{{ user.website }}</p>
+
+
+<h2>Subscribe pelo async pipe:</h2>
+
+<div *ngIf="(user$ | async) as meuUser">
+<p><b>Nome: </b>{{ meuUser.name }}</p>
+<p><b>Nome do usuário: </b>{{ meuUser.username }}</p>
+<p><b>Email: </b>{{ meuUser.email }}</p>
+<p><b>Site: </b>{{ meuUser.website }}</p>
+</div>
+
+<button (click)="onClickBtn(1)">1</button>
+<button (click)="onClickBtn(2)">2</button>
+<button (click)="onClickBtn(3)">3</button>

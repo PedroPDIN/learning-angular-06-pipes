@@ -1,0 +1,6 @@
+<div *ngIf="(userByIdPromise | async) as userById">
+<p><b>Nome: </b>{{ userById.name }}</p>
+<p><b>Nome do usuário: </b>{{ userById.username }}</p>
+<p><b>Email: </b>{{ userById.email }}</p>
+<p><b>Site: </b>{{ userById.website }}</p>
+</div>
